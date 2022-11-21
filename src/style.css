@@ -1,3 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(251, 110, 9);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 88%, rgba(252, 176, 69, 1) 100%);
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 2rem 2rem;
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: aliceblue;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logo-img {
+  max-width: 100%;
+  width: 150px;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 4rem;
+  grid-gap: 40px;
+  align-items: stretch;
+}
+
+.grid > .card {
+  border-radius: 1rem;
+  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  height: 400px;
+}
+
+.grid > .card img {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 100%;
+  height: 60%;
+}
+
+.text {
+  padding: 20px 20px 20px;
+}
+
+.text > button {
+  margin-top: 20px;
+  background: rgb(92, 92, 92);
+  border: 0;
+  border-radius: 0.5rem;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.likes {
+  padding-top: 1rem;
+  color: red;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 88%, rgba(252, 176, 69, 1) 100%);
+  color: white;
+  height: 60px;
+}
+
+.heart {
+  color: red;
 }
