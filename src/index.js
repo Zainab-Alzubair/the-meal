@@ -1,12 +1,11 @@
-import './style.css';
-import getData from './moduled/getData.js';
+import "./style.css";
+import getData from "./modules/getData.js";
 
 // Get All meals Data
-getData()
-  .then((data) => {
-    let mealCard = '';
-    data.meals.forEach((elem) => {
-      mealCard += `  
+getData().then((data) => {
+  let mealCard = "";
+  data.meals.forEach((elem) => {
+    mealCard += `  
     <div class="card">
     <img src="${elem.strMealThumb}" alt="Sample photo">
     <div class="text">
@@ -16,6 +15,6 @@ getData()
     </div>
     </div>
 `;
-    });
-    document.querySelector('.grid').innerHTML = mealCard;
   });
+  document.querySelector(".grid").innerHTML = mealCard;
+});
