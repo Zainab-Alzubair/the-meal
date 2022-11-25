@@ -5,6 +5,8 @@ import SubmitComment from './modules/submitComment.js';
 
 // Get All meals Data
 getData().then((data) => {
+  const allItemsCounter = document.querySelector('.items-counter');
+  allItemsCounter.innerText = `${data.meals.length} meals`;
   // Appending the mealas to the api
   let mealCard = '';
   data.meals.forEach((elem) => {
