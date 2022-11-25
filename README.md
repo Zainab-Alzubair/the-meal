@@ -194,8 +194,8 @@ You can deploy this project using:
 
 👤 **Mohamed Khaled**
 
-- GitHub: [@z4cope](https://github.com/z4cope)
-- LinkedIn: [@z4cope](https://www.linkedin.com/in/mohamed-khaled-10138a1b7/)
+- GitHub: [@Mohamed Khaled](https://github.com/z4cope)
+- LinkedIn: [@Mohamed Khaled](https://www.linkedin.com/in/mohamed-khaled-10138a1b7/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
