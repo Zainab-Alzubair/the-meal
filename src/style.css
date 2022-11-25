@@ -86,11 +86,21 @@ li a {
   bottom: 0;
   color: white;
   padding: 10px;
-  width: 100%;
+  cursor: pointer;
+}
+.text > button:hover {
+  margin-top: 20px;
+  background: #0b69c8;
+  border: 0;
+  border-radius: 0.5rem;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.likes {
-  padding-top: 1rem;
+.likes-number {
+  padding-top: .5rem;
   color: red;
 }
 
