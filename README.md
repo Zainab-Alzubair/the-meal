@@ -22,7 +22,6 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-
 # 📖 The Meal <a name="about-project"></a>
 
 > In this project, a website for Meals is being build. The external API used for showing Meals and its details is [MealsDB API](https://www.themealdb.com/api.php). The webapp have 2 user interfaces.
@@ -31,13 +30,13 @@
 - A popup window with more data about the meal that you can use to comment on it.
 
 ## 🛠 Built With <a name="built-with"></a>
+
 - HTML
 - CSS
 - Javascript
 - Webpack
 - APIs
 - Jest
-
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -55,7 +54,6 @@
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
 
 - **Develop webapp around an API**
@@ -65,26 +63,22 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://zainab-alzubair.github.io/the-meal/dist/)
 
-## 🚀 Project Details 
+## 🚀 Project Details
 
 - [Kanban Board](https://github.com/users/Zainab-Alzubair/projects/1)
 
-- Team      
-        - [Zainab Alzubair](https://github.com/Zainab-Alzubair)
-        - [Mohamed Khaled](https://github.com/z4cope)
+- Team
+  - [Zainab Alzubair](https://github.com/Zainab-Alzubair) - [Mohamed Khaled](https://github.com/z4cope)
 
-     
 ## 🚀 Pull Request
 
 [Zainab](https://github.com/Zainab-Alzubair/the-meal/pull/25)
 
 [Mohamed](https://github.com/Zainab-Alzubair/the-meal/pull/24))
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -93,6 +87,7 @@ To get a local copy up and running follow these simple example steps.
 ## Clone Git Repository
 
 -Reach to following Github URL:
+
 ```
 https://github.com/Zainab-Alzubair/the-meal
 
@@ -113,12 +108,15 @@ $ git clone {repository URL}
 - npm install
 
 # Build webpack <a name="setup"></a>
+
 - run command
+
 ```
 npm run build
 ```
 
 ## Start server
+
 ```
 npm start
 ```
@@ -140,16 +138,16 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
     _cd PATH_
-    
+
     _git clone https://github.com/Zainab-Alzubair/the-meal.git_
-   
-   _cd Javascript-Group-Capstone_
-   
-   _npm install_
-      
-   _npm run build_
-   
-   _npm start_
+
+_cd Javascript-Group-Capstone_
+
+_npm install_
+
+_npm run build_
+
+_npm start_
 
 ### Install
 
@@ -167,7 +165,6 @@ To run the project, execute the following command:
   npm start
 ```
 
-
 ### Run tests
 
 To run tests, run the following command:
@@ -179,10 +176,10 @@ To run tests, run the following command:
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
 You can deploy this project using:
+
 ```sh
   npm start
 ```
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,8 +194,8 @@ You can deploy this project using:
 
 👤 **Mohamed Khaled**
 
-- GitHub: [@Mohamed Khaled](https://github.com/z4cope)
-- LinkedIn: [@Mohamed Khaled](https://github.com/z4cope)
+- GitHub: [@z4cope](https://github.com/z4cope)
+- LinkedIn: [@z4cope](https://www.linkedin.com/in/mohamed-khaled-10138a1b7/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +204,6 @@ You can deploy this project using:
 - [ ] **Implement additional home pages, one page per category of movies**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -225,7 +221,6 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Thanks to [Microverse](https://www.microverse.org/) for giving this opportunity to learn ...
@@ -240,11 +235,11 @@ Give a ⭐️ if you like this project!
 
 - **How to generate a new key for the API?**
 
- - Open VScode and generate a key by using the following command
+- Open VScode and generate a key by using the following command
+
 ```
 curl -X POST https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/
 ```
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
