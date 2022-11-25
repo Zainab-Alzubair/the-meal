@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>The meal</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <h1 class="logo"><a href="#home">The Meal</a></h1>
+          </li>
+          <li class="nav-pills">Chicken</li>
+          <li class="nav-pills">Beef</li>
+          <li class="nav-pills">Seafood</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="items-counter"></h2>
+      <div class="grid"></div>
+      <!-- Data from API  -->
+      <div class="popup">
+        <div class="popup-wrapper">
+          <span class="close-popup">X</span>
+          <div class="popup-content"></div>
+          <h3>Comments <span class="comments-count"></span></h3>
+          <ul class="comment-section"></ul>
+          <form id="comment-form">
+            <h2>Add Comment</h2>
+            <input type="text" placeholder="Your name" required />
+            <textarea
+              name="insight"
+              id="insight"
+              cols="30"
+              rows="10"
+              placeholder="Your insight"
+              required
+            ></textarea>
+            <button class="submit-btn" type="submit">Comment</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="footer">
+        Created with <span class="heart">❤</span> By Mohamed Khaled & Zainab
+        Alzubair | © 2022
+      </p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
