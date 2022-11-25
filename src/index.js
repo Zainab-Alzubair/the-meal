@@ -31,12 +31,13 @@ getData()
         });
         // get likes ID when like button clicked
         const likeBtn = document.querySelectorAll('.like-heart');
-        for (let i = 0; i < likeBtn.length; i += 1) {
-          likeBtn[i].onclick = () => {
-            const { id } = likeBtn[i].parentElement.parentElement;
+        likeBtn.forEach((btn) =>{
+        btn.onclick = () => {
+            const { id } = btn.parentElement.parentElement;
             addLike(id, likes);
-          };
-        }
+          }
+        })
+        
       });
       document.querySelector('.grid').innerHTML = mealCard;
     });
