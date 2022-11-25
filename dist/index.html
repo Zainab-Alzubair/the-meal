@@ -12,21 +12,27 @@
     <header>
       <nav>
         <ul class="nav-bar">
-          <h1 class="logo"><a href="#home">The Meal</a></h1>
-          <!-- <h2 class="logo"><a  href="#home"><img class="logo-img" src="../img/The-Meal-1.png" alt="logo"></a></h2> -->
-          <li><a class="active" href="#">Meals</a></li>
-          <li><a href="#">Likes</a></li>
-          <li><a href="#">Comments</a></li>
+          <li>
+            <h1 class="logo"><a href="#home">The Meal</a></h1>
+          </li>
+          <li class="nav-pills">Chicken</li>
+          <li class="nav-pills">Beef</li>
+          <li class="nav-pills">Seafood</li>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- <div class="count">
+        <h2>Empty</h2>
+      </div> -->
+      <h2 class="items-counter"></h2>
       <div class="grid"></div>
       <!-- Data from API  -->
       <div class="popup">
         <div class="popup-wrapper">
           <span class="close-popup">X</span>
           <div class="popup-content"></div>
+          <h3 class="comments-count"></h3>
           <ul class="comment-section"></ul>
           <form id="comment-form">
             <h2>Add Comment</h2>
