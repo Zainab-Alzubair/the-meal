@@ -3,8 +3,9 @@ export const updateLikes = async (id, likes) => {
   try {
     const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/e74v3gv4fqA3Iq80tG1r/likes/');
     const data = await response.json();
+    /* eslint-disable */
     data.filter((item) => {
-      likes.forEach((like) => { /* eslint-disable */
+      likes.forEach((like) => {
         const cardId = like.parentElement.parentElement.id;
         if (item.item_id === cardId) {
           like.innerHTML = `${item.likes} likes`;

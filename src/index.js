@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 import { getData, getLikes } from './modules/getData.js';
 import { addLike } from './modules/mealsLikes.js';
@@ -21,8 +20,9 @@ getData()
       // display likes number in homepage
       getLikes().then((data) => {
         const likes = document.querySelectorAll('.likes-number');
-        data.filter((item) => {
-          likes.forEach((like) => { /* eslint-disable */
+        /* eslint-disable */
+        data.filter((item) => { 
+          likes.forEach((like) => { 
             const cardId = like.parentElement.parentElement.id;
             if (item.item_id === cardId) {
               like.innerHTML = `${item.likes} likes`;
