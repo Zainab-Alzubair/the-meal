@@ -2,7 +2,7 @@
 export const updateLikes = async (id, likes) => {
   try {
     const response = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${process.env.MEALS_API_ID_ZAINAB}/likes/`
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${process.env.MEALS_API_ID_ZAINAB}/likes/`,
     );
     const data = await response.json();
     /* eslint-disable */

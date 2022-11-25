@@ -2,14 +2,14 @@ const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 
 export const postMethod = async (data = {}) => {
   const response = await fetch(url, {
-    method: "POST",
-    mode: "cors",
-    cache: "no-cache",
-    credentials: "same-origin",
+    method: 'POST',
+    mode: 'cors',
+    cache: 'no-cache',
+    credentials: 'same-origin',
     headers: {
-      "Content-type": "application/json",
+      'Content-type': 'application/json',
     },
-    redirect: "follow",
+    redirect: 'follow',
     body: JSON.stringify(data),
   });
   return response;
