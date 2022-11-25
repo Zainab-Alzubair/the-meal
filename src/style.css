@@ -88,6 +88,7 @@ li a {
   padding: 10px;
   cursor: pointer;
 }
+
 .text > button:hover {
   margin-top: 20px;
   background: #0b69c8;
@@ -100,7 +101,7 @@ li a {
 }
 
 .likes-number {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   color: red;
 }
 

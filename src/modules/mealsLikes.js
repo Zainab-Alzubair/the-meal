@@ -1,18 +1,17 @@
-
-//function to update likes after button clicked
+// function to update likes after button clicked
 export const updateLikes = async (id, likes) => {
   try {
     const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/e74v3gv4fqA3Iq80tG1r/likes/');
     const data = await response.json();
     data.filter((item) => {
-      likes.forEach((like)=>{
-        let cardId = like.parentElement.parentElement.id
-      if (item.item_id === cardId) {
-        like.innerHTML = `${item.likes} likes`;
-      } else {
-        return '';
-      }
-    })
+      likes.forEach((like) => { /* eslint-disable */
+        const cardId = like.parentElement.parentElement.id;
+        if (item.item_id === cardId) {
+          like.innerHTML = `${item.likes} likes`;
+        } else {
+          return '';
+        }
+      });
       return '';
     });
   } catch (e) {
@@ -20,7 +19,7 @@ export const updateLikes = async (id, likes) => {
   }
   return '';
 };
-//function to post likes to API
+// function to post likes to API
 export const addLike = async (id, likes) => {
   try {
     await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/e74v3gv4fqA3Iq80tG1r/likes/', {
@@ -37,5 +36,4 @@ export const addLike = async (id, likes) => {
     return e.message;
   }
   return '';
-  
 };

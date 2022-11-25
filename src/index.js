@@ -1,7 +1,6 @@
 import _ from 'lodash';
-import "./style.css";
-import {getData} from "./modules/getData.js";
-import {getLikes} from "./modules/getData.js";
+import './style.css';
+import { getData, getLikes } from './modules/getData.js';
 import { addLike } from './modules/mealsLikes.js';
 // Get All meals Data
 getData()
@@ -19,27 +18,26 @@ getData()
     </div>
     </div>
 `;
-//display likes number in homepage
-getLikes().then((data) => {
-  const likes =document.querySelectorAll('.likes-number')
-  data.filter((item) => {
-      likes.forEach((like)=>{
-        let cardId = like.parentElement.parentElement.id
-        if (item.item_id === cardId) {
-          like.innerHTML = `${item.likes} likes`;
-      }
-      })
+      // display likes number in homepage
+      getLikes().then((data) => {
+        const likes = document.querySelectorAll('.likes-number');
+        data.filter((item) => {
+          likes.forEach((like) => { /* eslint-disable */
+            const cardId = like.parentElement.parentElement.id;
+            if (item.item_id === cardId) {
+              like.innerHTML = `${item.likes} likes`;
+            }
+          });
+        });
+        // get likes ID when like button clicked
+        const likeBtn = document.querySelectorAll('.like-heart');
+        for (let i = 0; i < likeBtn.length; i += 1) {
+          likeBtn[i].onclick = () => {
+            const { id } = likeBtn[i].parentElement.parentElement;
+            addLike(id, likes);
+          };
+        }
+      });
+      document.querySelector('.grid').innerHTML = mealCard;
     });
-//get likes ID when like button clicked
-  const likeBtn = document.querySelectorAll('.like-heart')
-  for(let i=0;i<likeBtn.length;i++){
-    likeBtn[i].onclick = () => {
-      const {id } = likeBtn[i].parentElement.parentElement;
-      addLike(id, likes);
-    };
-  }
- 
-});
-  document.querySelector('.grid').innerHTML = mealCard;
-})
-});
+  });
