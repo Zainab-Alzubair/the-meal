@@ -5,10 +5,8 @@ class RenderComments {
     // Get method to view the comments
     const comments = await getComments(cardId);
     const commentsList = document.querySelector('.comment-section');
-    const commentsCount = document.querySelector('.comments-count');
-    commentsCount.innerText = `Comments (${
-      comments.length ? comments.length : '0'
-    })`;
+    this.commentsCount(comments);
+
     commentsList.innerHTML = ''; /* eslint-disable */
     comments.length
       ? comments.forEach((comment) => {
@@ -18,6 +16,13 @@ class RenderComments {
         })
       : "";
   };
+
+  static commentsCount(comments = []) {
+    const commentsCount = document.querySelector(".comments-count");
+    commentsCount.textContent = comments?.length ? comments.length : 0;
+
+    return comments;
+  }
 }
 
 export default RenderComments;
