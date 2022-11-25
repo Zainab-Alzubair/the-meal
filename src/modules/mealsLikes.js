@@ -2,7 +2,7 @@
 export const updateLikes = async (id, likes) => {
   try {
     const response = await fetch(
-      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/e74v3gv4fqA3Iq80tG1r/likes/',
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${process.env.MEALS_API_ID_ZAINAB}/likes/`
     );
     const data = await response.json();
     /* eslint-disable */
@@ -26,7 +26,7 @@ export const updateLikes = async (id, likes) => {
 export const addLike = async (id, likes) => {
   try {
     await fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/e74v3gv4fqA3Iq80tG1r/likes/",
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${process.env.MEALS_API_ID_ZAINAB}/likes/`,
       {
         method: "POST",
         body: JSON.stringify({

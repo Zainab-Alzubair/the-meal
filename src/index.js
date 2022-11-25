@@ -1,15 +1,15 @@
-import './style.css';
-import { getData, getLikes } from './modules/getData.js';
-import { addLike } from './modules/mealsLikes.js';
-import RenderComments from './modules/renderCommentsList.js';
-import SubmitComment from './modules/submitComment.js';
+import "./style.css";
+import { getData, getLikes } from "./modules/getData.js";
+import { addLike } from "./modules/mealsLikes.js";
+import RenderComments from "./modules/renderCommentsList.js";
+import SubmitComment from "./modules/submitComment.js";
 
 // Get All meals Data
 getData().then((data) => {
-  const allItemsCounter = document.querySelector('.items-counter');
+  const allItemsCounter = document.querySelector(".items-counter");
   allItemsCounter.innerText = `${data.meals.length} meals`;
   // Appending the mealas to the api
-  let mealCard = '';
+  let mealCard = "";
   data.meals.forEach((elem) => {
     mealCard += `  
       <div data-set="${elem.idMeal}" id="${elem.idMeal}" class="card">
@@ -24,7 +24,7 @@ getData().then((data) => {
   `;
     // Get likes
     getLikes().then((data) => {
-      const likes = document.querySelectorAll('.likes-number');
+      const likes = document.querySelectorAll(".likes-number");
       /* eslint-disable */
       data.filter((item) => {
         likes.forEach((like) => {
