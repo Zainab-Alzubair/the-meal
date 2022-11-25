@@ -63,12 +63,12 @@ body {
   margin: 4rem;
   grid-gap: 40px;
   align-items: stretch;
+  justify-content: center;
 }
 
 .grid > .card {
   border-radius: 1rem;
   box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
-  height: 400px;
 }
 
 .grid > .card img {
