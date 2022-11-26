@@ -2,7 +2,7 @@
 export const getData = async () => {
   try {
     const response = await fetch(
-      "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
+      "https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef"
     );
     const meals = await response.json();
     return meals;
